@@ -114,7 +114,7 @@ function InputForm(props: any) {
     if (link !== '') {
       const requestOptions = {
         method: 'POST',
-        headers: { 'Content-Type': 'text/plain' },
+        headers: { 'Content-Type': 'application/json', 'accept':'application/json'},
         body: JSON.stringify({ link: link })
       };
       fetch('https://voicebotbackend-production.up.railway.app/profile', requestOptions)
