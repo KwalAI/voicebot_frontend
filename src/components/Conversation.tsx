@@ -22,7 +22,7 @@ const Conversation = ({
   //   Object.assign(config, { audioDeviceConfig })
   // );
   const { status, start, stop, analyserNode } = useConversation({
-    backendUrl: "wss://voicebotbackend-production.up.railway.app/conversation",
+    backendUrl: "ws://0.0.0.0/conversation",
     audioDeviceConfig,
   });
 

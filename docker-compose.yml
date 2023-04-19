@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
- voicebot:
-  container_name: voicebot
-  image: voicebot
+ voicebot_frontend:
+  container_name: voicebot_frontend
+  image: voicebot_frontend
   build:
    context: .
   ports:

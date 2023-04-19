@@ -117,7 +117,7 @@ function InputForm(props: any) {
         headers: { 'Content-Type': 'application/json', 'accept':'application/json'},
         body: JSON.stringify({ link: link })
       };
-      fetch('https://voicebotbackend-production.up.railway.app/profile', requestOptions)
+      fetch('http://0.0.0.0/profile', requestOptions)
         .then(response => response.json())
         .then(data => {
           props.setLinkedinProfile(link)
